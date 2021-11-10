@@ -16,10 +16,10 @@ class FlutterWifiDirect {
   }
 
   static Future<String?> getDevices(String inputArg) async {
-    final String? version = await _channel.invokeMethod(
+    final String? dev = await _channel.invokeMethod(
       'getDevices',
       {'example': inputArg},
     );
-    return version;
+    return dev;
   }
 }
